@@ -29,8 +29,10 @@
 1. Github hook trigger for GITScm polling
 2. Go onto the specific repo on github
 3. Settings > webhook > add webhook
-4. Insert ```http://jenkins.spartaglobal.academy:8080/jenkins/github-webhook/```
+4. Insert ```http://jenkins.spartaglobal.academy:8080/github-webhook/```
+	- Before github-webhook/ the URL is interchange for what server works
 5. Just the push event as lots of people on small server (will likely change)
+6. This should auto trigger the server to build your code
 
 **Build environment**
 1. May need to provide secret files(dont for this example)
@@ -44,6 +46,26 @@ cd app/
 npm install
 npm test
 ``` 
+
+## Modifying Jenkins for continuous integration
+**The code checked is code from the develop branch (not the master branch)**
+- Specify branch under source code management to /develop
+
+**The job merges code from the develop branch with the master branch**
+- Additonal behaviour under source code management
+- Add merge before build
+- Origin 
+
+**The git publisher plugin pushes the master branch once tests pass**
+- Additional behaviour after build
+- Push only if build succeds
+- Merge results
+
+**Email sent to developer once code merged succesfully**
+- Additional behaviour after build
+- Email notification
+- Test email inputted 
+
 ## Theory
 
 **Web hook**

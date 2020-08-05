@@ -57,7 +57,6 @@ npm test
 - Jenkins will listen for git changes
 - These will then be directed to a test environment
 
-
 ## Web app
 
 ## Tests

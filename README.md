@@ -12,6 +12,20 @@
 	- Copy link to repositry as ssh per git clone syntax
 	- Means jenkins will need verified keys
 
+**Adding SSH key to jenkins**
+- follow steps to generate github SSH Key
+- https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+- Once done go to repostries > add credentials > Jenkins.
+- Kind is SSH username
+- ID and description is dependent on contect e.g eng67max - public ID
+- SSH private key is got by ```cat key_name```
+- Private key is generated ssh key
+- Add key then select it. 
+- SSH public key is got by ```cat key_name.public```
+- This is then pasted into Github SSH keys list. 
+- Reselect your credentials and it should work
+
+
 **Web hook**
 - Inverted API call
 - API call = When you ask employer if you got the job

@@ -13,32 +13,32 @@
 	- Means jenkins will need verified keys
 
 **Adding SSH key to jenkins**
-- follow steps to generate github SSH Key(in .ssh folder)
-- https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-- Once done go to repostries > add credentials > Jenkins.
-- Kind is SSH username
-- ID and description is dependent on contect e.g eng67max - public ID
-- SSH private key is got by ```cat key_name``` (in .ssh folder)
-- Private key is generated ssh key
-- Add key then select it. 
-- SSH public key is got by ```cat key_name.public``` (in .ssh folder)
-- This is then pasted into Github SSH keys list. 
-- Reselect your credentials and it should work
+1. follow steps to generate github SSH Key(in .ssh folder)
+2. https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+3. Once done go to repostries > add credentials > Jenkins.
+4. Kind is SSH username
+5. ID and description is dependent on contect e.g eng67max - public ID
+6. SSH private key is got by ```cat key_name``` (in .ssh folder)
+7. Private key is generated ssh key
+8. Add key then select it. 
+9. SSH public key is got by ```cat key_name.public``` (in .ssh folder)
+10. This is then pasted into Github SSH keys list. 
+11. Reselect your credentials and it should work
 
 **Build Triggers**
-- Github hook trigger for GITScm polling
-- Go onto the specific repo on github
-- Settings > webhook > add webhook
-- Insert ```http://jenkins.spartaglobal.academy:8080/jenkins/github-webhook/```
-- Just the push event as lots of people on small server (will likely change)
+1. Github hook trigger for GITScm polling
+2. Go onto the specific repo on github
+3. Settings > webhook > add webhook
+4. Insert ```http://jenkins.spartaglobal.academy:8080/jenkins/github-webhook/```
+5. Just the push event as lots of people on small server (will likely change)
 
 **Build environment**
-- May need to provide secret files(dont for this example)
-- Provide Node and npm bin folder to path
+1. May need to provide secret files(dont for this example)
+2. Provide Node and npm bin folder to path
 
 **Build**
-- Add execute shell step
-- add below command. WIll hopefully automatically listen to github and test code
+1. Add execute shell step
+2. Add below command. Will automatically listen to github and test code
 ```
 cd app/
 npm install

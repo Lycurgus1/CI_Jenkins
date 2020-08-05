@@ -2,12 +2,12 @@
 
 ## Jenkins
 **Creating a project**
-- 1 .Enter descripton of project
-- 2 .Discord old builds ticked normally
-- 3 .Enter github repositry under github project tickbox
-- 4. Restrict where project can be run
+1. Enter descripton of project
+2. Discord old builds ticked normally
+3. Enter github repositry under github project tickbox
+4. Restrict where project can be run
 	- Tick then fill in box with sparta-ubuntu-node
-- 5 .Source code
+5 .Source code
 	- Use git per industry standard. 
 	- Copy link to repositry as ssh per git clone syntax
 	- Means jenkins will need verified keys
@@ -32,6 +32,18 @@
 - Insert ```http://jenkins.spartaglobal.academy:8080/jenkins/github-webhook/```
 - Just the push event as lots of people on small server (will likely change)
 
+**Build environment**
+- May need to provide secret files(dont for this example)
+- Provide Node and npm bin folder to path
+
+**Build**
+- Add execute shell step
+- add below command. WIll hopefully automatically listen to github and test code
+```
+cd app/
+npm install
+npm test
+``` 
 
 ## Theory
 

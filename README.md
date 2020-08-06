@@ -1,6 +1,5 @@
 # Continuous integration with Jenkins
 
-
 ## What is Jenkins
 - An automation software, written in Java. Its principle use is with continuous integration
 - This enables projects to be continuously built and tested

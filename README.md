@@ -55,7 +55,7 @@ npm test
 - Additonal behaviour under source code management
 - Add merge before build
 - Origin
-- May not be neccesary 
+- May not be neccesary - checking atm
 
 **The git publisher plugin pushes the master branch once tests pass**
 - Additional behaviour after build

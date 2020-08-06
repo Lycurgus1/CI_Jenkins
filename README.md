@@ -1,13 +1,20 @@
 # Continuous integration with Jenkins
 
-## Jenkins
+## What is Jenkins
+- An automation software, written in Java. Its principle use is with continuous integration
+- This enables projects to be continuously built and tested
+- Thus overall software delivery is faster and can enables working with testing and deployment software
+- It uses the pipeline-as-a-code concept, enabling automation
+
+## Jenkins set up
 **Creating a project**
-1. Enter descripton of project
-2. Discord old builds ticked normally
-3. Enter github repositry under github project tickbox
-4. Restrict where project can be run
+1. Click on ```New item```
+2. Enter descripton of project
+3. Discord old builds ticked normally
+4. Enter github repositry under github project tickbox
+5. Restrict where project can be run
 	- Tick then fill in box with sparta-ubuntu-node
-5 .Source code
+6 .Source code
 	- Use git per industry standard. 
 	- Copy link to repositry as ssh per git clone syntax
 	- Means jenkins will need verified keys
@@ -65,6 +72,10 @@ npm test
 - Test email inputted 
 
 ## Theory
+**What is an API**
+- APIs allow apps to communicate wtih each other
+- Stands for Application Processing Interface
+- It governs the access points for the server
 
 **Web hook**
 - Inverted API call
@@ -78,8 +89,4 @@ npm test
 - These will then be directed to a test environment
 
 ## Web app
-
-## Tests
-**Language**
-- Ran in Ruby
 

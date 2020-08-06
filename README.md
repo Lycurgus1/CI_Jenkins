@@ -54,7 +54,8 @@ npm test
 **The job merges code from the develop branch with the master branch**
 - Additonal behaviour under source code management
 - Add merge before build
-- Origin 
+- Origin
+- May not be neccesary 
 
 **The git publisher plugin pushes the master branch once tests pass**
 - Additional behaviour after build

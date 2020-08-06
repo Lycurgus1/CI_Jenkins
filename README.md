@@ -49,22 +49,19 @@ npm test
 
 ## Modifying Jenkins for continuous integration
 **The code checked is code from the develop branch (not the master branch)**
-- Specify branch under source code management to /develop
-
-**The job merges code from the develop branch with the master branch**
-- Additonal behaviour under source code management
-- Add merge before build
-- Origin - 
-- May not be neccesary - checking atm
+- Specify branch under source code management to :origin/develop
 
 **The git publisher plugin pushes the master branch once tests pass**
 - Additional behaviour after build
 - Push only if build succeds
 - Merge results
+- Add branch
+	- Branch to push: ```master```
+	- Target remote name: ```origin```
 
 **Email sent to developer once code merged succesfully**
 - Additional behaviour after build
-- Email notification
+- Email notification -
 - Test email inputted 
 
 ## Theory

@@ -74,7 +74,7 @@ npm test
 ## Theory
 **What is an API**
 - APIs allow apps to communicate wtih each other
-- Stands for Application Processing Interface
+- Stands for Application Programming Interface
 - It governs the access points for the server
 
 **Web hook**

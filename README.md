@@ -55,6 +55,15 @@ npm test
 ``` 
 
 ## Modifying Jenkins for continuous integration
+**Max number of builds**
+- Set to 1
+
+**Seeting email notification**
+- Go to office 365 connector
+- Select add webhook
+- Add name then follow instructions on question mark near URL box
+- It may take a few commits for it to update
+
 **The code checked is code from the develop branch (not the master branch)**
 - Specify branch under source code management to :origin/develop
 
@@ -65,11 +74,6 @@ npm test
 - Add branch
 	- Branch to push: ```master```
 	- Target remote name: ```origin```
-
-**Email sent to developer once code merged succesfully**
-- Additional behaviour after build
-- Email notification -
-- Test email inputted 
 
 ## Theory
 **What is an API**

@@ -11,11 +11,14 @@
 1. Click on ```New item```
 2. Enter descripton of project
 3. Discord old builds ticked normally
+	- Restrict builds to 2
+	- This will reduce the unnneccesary builds saved
 4. Enter github repositry under github project tickbox
 5. Restrict where project can be run
 	- Tick then fill in box with sparta-ubuntu-node
-6 .Source code
-	- Use git per industry standard. 
+	- This may have to be inserted multiple times
+6. Source code
+	- Use git per industry standard
 	- Copy link to repositry as ssh per git clone syntax
 	- Means jenkins will need verified keys
 
@@ -55,10 +58,7 @@ npm test
 ``` 
 
 ## Modifying Jenkins for continuous integration
-**Max number of builds**
-- Set to 1
-
-**Seeting email notification**
+**Setting email notification**
 - Go to office 365 connector
 - Select add webhook
 - Add name then follow instructions on question mark near URL box

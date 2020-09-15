@@ -1,5 +1,7 @@
 # Continuous integration with Jenkins
 
+This repositry contains inforamtion regarding setting up a continuous integration pipeline with Jenkins, done as part of DevOps training at Sparta Global. 
+
 ## Dependencies
 
 - Jenkins installed or available on a server accesible online

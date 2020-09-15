@@ -1,5 +1,11 @@
 # Continuous integration with Jenkins
 
+## Dependencies
+
+- Jenkins installed or available on a server accesible online
+- To have it installed on host machine, there are steps available on their website
+```https://www.jenkins.io/download/```
+
 ## What is Jenkins
 - An automation software, written in Java. Its principle use is with continuous integration
 - This enables projects to be continuously built and tested
